@@ -1,6 +1,6 @@
 # stduen.java
-*这期所要学习的内容是对象和继承，任务是做一个通过对象和继承做一个选课系统
-*继承的关键字是"EXTENDS"我把people设定成父类 并且设定了关于people的属性，属性有名字，性别，学号，课程号；
+*这期所要学习的内容是对象和继承，任务是做一个通过对象和继承做一个选课系统<br>
+*继承的关键字是"EXTENDS"我把people设定成父类 并且设定了关于people的属性，属性有名字，性别，学号，课程号；<br>
 *例如：	static String number;
 		static String name;
 		static String sex;
