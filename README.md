@@ -76,12 +76,12 @@
      	mName = a.getName();<br>
 		mNumber = a.getNumber();<br>
 		mSex = a.getSex();<br>
-		String teachernumber=b.getNumber();
-		String teachername = b.getName();
-		String teacherclass =b.getInstruction();
-    System.out.println("学生选课系统");
-		System.out.println("Serial number is : " + mNumber);
-		System.out.println("Name is : " + mName);
-		System.out.println("sex is :" + mSex);
-		a.setClasss("java");・・・
-    这次的任务是希望通过『选课系统』了解学习类与对象 和 子类的继承 通过课本同学网上的教程进一步的学习掌握这一周所学内容。对于这次实际操作我对于子类与继承有了一个比较基础的了解。也有不少失误，对于对象的重写了解较少会重新学习掌握；
+		String teachernumber=b.getNumber();<br>
+		String teachername = b.getName();<br>
+		String teacherclass =b.getInstruction();<br>
+    System.out.println("学生选课系统");<br>
+		System.out.println("Serial number is : " + mNumber);<br>
+		System.out.println("Name is : " + mName);<br>
+		System.out.println("sex is :" + mSex);<br>
+		a.setClasss("java");・・・<br>
+    这次的任务是希望通过『选课系统』了解学习类与对象 和 子类的继承 通过课本同学网上的教程进一步的学习掌握这一周所学内容。对于这次实际操作<br>我对于子类与继承有了一个比较基础的了解。<br>也有不少失误，对于对象的重写了解较少会重新学习掌握；
