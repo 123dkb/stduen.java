@@ -1,16 +1,16 @@
 # stduen.java
 *这期所要学习的内容是对象和继承，任务是做一个通过对象和继承做一个选课系统<br>
 *继承的关键字是"EXTENDS"我把people设定成父类 并且设定了关于people的属性，属性有名字，性别，学号，课程号；<br>
-*例如：	static String number;
-		static String name;
-		static String sex;
-		public people(String number,String name,String sex) {
-			this.number=number;
-			this.name=name;
-			this.sex=sex;・・・
-*子类和父类在一个同一个包中，子类继承父类中不是private的成员变量，继承的成员变量或方法的访问权限保持不变
-*子类必须通过关键字super关键字来继承父类的构造函数，子类默认继承父类的无参数的构造函数
-*因为我再people父类中构造了三个带有参数的构造函数所以我再后面的子类中必须加入关键字super才可以正常编辑；
+*例如：	static String number;<br>
+		static String name;<br>
+		static String sex;<br>
+		public people(String number,String name,String sex) {<br><br><br><br>
+			this.number=number;<br><br><br>
+			this.name=name;<br><br>
+			this.sex=sex;・・・<br>
+*子类和父类在一个同一个包中，子类继承父类中不是private的成员变量，继承的成员变量或方法的访问权限保持不变<br>
+*子类必须通过关键字super关键字来继承父类的构造函数，子类默认继承父类的无参数的构造函数<br>
+*因为我再people父类中构造了三个带有参数的构造函数所以我再后面的子类中必须加入关键字super才可以正常编辑；<br>
 *例如：public class student extends people{
 		public student(String number, String name, String sex) {
 			super(number, name, sex);	
