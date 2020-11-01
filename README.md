@@ -11,71 +11,71 @@
 *子类和父类在一个同一个包中，子类继承父类中不是private的成员变量，继承的成员变量或方法的访问权限保持不变<br>
 *子类必须通过关键字super关键字来继承父类的构造函数，子类默认继承父类的无参数的构造函数<br>
 *因为我再people父类中构造了三个带有参数的构造函数所以我再后面的子类中必须加入关键字super才可以正常编辑；<br>
-*例如：public class student extends people{
-		public student(String number, String name, String sex) {
-			super(number, name, sex);	
+*例如：public class student extends people{<br>
+		public student(String number, String name, String sex) {<br>
+			super(number, name, sex);<br>	
 		}
-		public student() {
-			super(number, name, sex);
+		public student() {<br>
+			super(number, name, sex);<br>
 		}
-	    String classs;
-		public String getClasss() {
-			return classs;
+	    String classs;<br>
+		public String getClasss() {<br>
+			return classs;<br>
 		}
 
 		public void setClasss(String classs) {
 			this.classs = classs;
 		}
 		
-}・・・
-例如：class teacher extends people{
-	public teacher(String number, String name, String sex) {
-		super(number, name, sex);
+}・・・<br>
+例如：class teacher extends people{<br>
+	public teacher(String number, String name, String sex) {<br>
+		super(number, name, sex);<br>
 	}
-	public teacher() {
-		super(number, name, sex);
-	}  ；
-  *使用对象数组的方法：
-  例如：Student [] stu;
-  stu = new Student[10]
-  所以我要再couser 类创建：
-  例如：String [] a= {"java","java web","ps"};
-  *选课的course的类中出去基础的信息属性，我需要把学生的选择的课程号，地点，时间加入进去。这时需要通过一个if else语句来实现
-  例如：public void xuanke(String name){
-		student student=new student();
-		student.getName();
-		student.setNumber("2020322105");
-		student.setName("dam");
-		String bh;
-		bh=student.getNumber();
-	    if(student.getNumber()=="2020322105") {
-	    	arress=301;time="8:00";
-	    	System.out.println("学生姓名："+student.getName());
-	    	System.out.println("学生选择的课程 ："+a[0]);
-	    	System.out.println("上课地点："+arress+"教室");
-	    	System.out.println("上课时间："+time);
+	public teacher() {<br>
+		super(number, name, sex);<br>
+	}  ；<br>
+  *使用对象数组的方法：<br>
+  例如：Student [] stu;<br>
+  stu = new Student[10]<br>
+  所以我要再couser 类创建：<br>
+  例如：String [] a= {"java","java web","ps"};<br>
+  *选课的course的类中出去基础的信息属性，我需要把学生的选择的课程号，地点，时间加入进去。这时需要通过一个if else语句来实现<br>
+  例如：public void xuanke(String name){<br>
+		student student=new student();<br>
+		student.getName();<br>
+		student.setNumber("2020322105");<br>
+		student.setName("dam");<br>
+		String bh;<br>
+		bh=student.getNumber();<br>
+	    if(student.getNumber()=="2020322105") {<br>
+	    	arress=301;time="8:00";<br>
+	    	System.out.println("学生姓名："+student.getName());<br>
+	    	System.out.println("学生选择的课程 ："+a[0]);<br>
+	    	System.out.println("上课地点："+arress+"教室");<br>
+	    	System.out.println("上课时间："+time);<br>
 	    	
-	    }else  {
-	    	System.out.println("你输入的课程有误");
+	    }else  {<br>
+	    	System.out.println("你输入的课程有误");<br>
 	    }
-	}・・・
-  最后我们需要把所有汇总，再test类中创建主函数以保证这个包的实现『选课系统』:
-  例如：
-  public class test {
-	public static void main(String[] args) {
-		student a = new student();
-		teacher b = new teacher();
-		course0 c= new course0();
+	}・・・<br>
+  最后我们需要把所有汇总，再test类中创建主函数以保证这个包的实现『选课系统』:<br>
+  例如：<br>
+  public class test {<br>
+	public static void main(String[] args) {<br>
+		student a = new student();<br>
+		teacher b = new teacher();<br>
+		course0 c= new course0();<br>
 		
-		String mName = a.getName();
-		String mNumber = a.getNumber();
-		String mSex = a.getSex();
-		a.setNumber("2020322102");
-		a.setName("dam33");
-		a.setSex("sile");
-     	mName = a.getName();
-		mNumber = a.getNumber();
-		mSex = a.getSex();
+		String mName = a.getName();<br>
+		String mNumber = a.getNumber();<br>
+		String mSex = a.getSex();<br>
+		a.setNumber("2020322102");<br>
+		a.setName("dam33");<br>
+		a.setSex("sile");<br>
+     	mName = a.getName();<br>
+		mNumber = a.getNumber();<br>
+		mSex = a.getSex();<br>
 		String teachernumber=b.getNumber();
 		String teachername = b.getName();
 		String teacherclass =b.getInstruction();
